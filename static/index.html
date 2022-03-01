@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>MD chatroom</title>
+      <link rel="stylesheet" href="style.css">
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+   </head>
+   
+   <script src = "/socket.io/socket.io.js"></script>
+   <script src="/socketio-file-upload/client.js"></script>
+   <body>
+      <img src="logo.png" id="logo">
+      <div id = "error-container"></div>
+      <form  id="loginForm" action="" >
+      <input id = "name" type = "text" name = "name" value = "" placeholder = "Enter your name:" >
+      <input type="file" id="imagefile" name="files" style="display: none;" 
+         >
+      <button id = "button"  type = "button" name = "button" onclick = "setUsername()">
+         Let me chat!
+      </button></form>
+
+      
+      <script src="script.js"></script>
+   </body>
+</html>
